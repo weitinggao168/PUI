@@ -18,7 +18,7 @@ let products = [
   ];
 
 
-
+//Add eventlistener
 for (let i=0; i<selectors.length; i++){
   selectors[i].addEventListener('click', () => {
     selectPrice(products[i]);
@@ -52,25 +52,5 @@ function selectPrice(){
   });
 }
 
-
-
-
-
-/*carts.forEach(add => {
-  add.addEventListener('click', () => {
-  cartNumbers();
-  });
-});
-
-function cartNumbers() {
- 
-  if(productNumbers) {
-    localStorage.setItem('cartNumbers', productNumbers + 1);
-    document.querySelector('#cart span').textContent = productNumbers + 1;
-  } else {
-    localStorage.setItem('cartNumbers', 1);
-    document.querySelector('#cart span').textContent = 1;
-  }
-}*/
-
+//Call the function
 loadCartNumbers();
