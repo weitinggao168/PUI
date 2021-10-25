@@ -1,0 +1,154 @@
+body {
+  padding-top:40px;
+  margin-bottom:100px;
+  margin-left:130px;
+  margin-right:130px;
+  font-family:"Helvetica", sans-serif;
+  line-height:1.7;
+}
+
+.icon-bar {
+  overflow: auto;
+  margin-bottom:10px;
+}
+
+
+h1 {
+  margin-top:40px;
+  margin-bottom:40px;
+  text-align: center;
+  font-size: 40px;
+  font-family:"Sofia", sans-serif;
+  font-style: italic;
+}
+
+
+p{
+  padding-right:80px;
+  color:#444444;
+}
+
+hr.solid {
+  border: 0.5px solid #919191;
+  margin-top:20px;
+  margin-left:320px;
+  margin-right:320px;
+}
+
+#size{
+	font-style:italic;
+	font-weight:300;
+}
+
+.boxed{
+  margin-top:80px;
+  font-size:16px;
+  color:AB7045;
+  font-family:"Sofia", sans-serif;
+  font-style:italic;
+}
+
+
+h3{
+	font-size:18px;
+	font-weight:600;
+	margin-bottom:-16px
+}
+
+.Price{
+  font-size:20px;
+  font-family:"Sofia", sans-serif;
+  font-weight:bold;
+  color:#923D00;	
+}
+
+
+.button {
+  background-color: #923D00;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.button:hover {
+  box-shadow: 0 0 20px 1px #DDD6D1;
+}
+
+#DetailImage{
+    margin-top:50px;
+	width:90%;
+}
+
+.column1 { 
+  float:left;
+  width: 40%;
+}
+.column2{
+  float:left;
+  width: 60%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*Make the webpage responsive*/
+@media screen and (max-width: 1024px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#Close{
+	float:right;
+	margin-left:3%;
+	width:2.2%;
+}
+
+#Back{
+	width:6.5%;
+	float:left;
+}
+
+
+#CartDetail{
+	width:24%;
+	margin-top:16px;
+	margin-left:320px;
+	border-radius:8px;
+}
+
+.NumberSelector1{
+  font-weight:bold;
+  color:#923D00;	
+  background-color:white;
+  border:1px solid #DDD6D1;
+  border-radius:3px;
+  margin-right:10px;
+}
+
+.NumberSelector2{
+  font-weight:bold;
+  color:#923D00;	
+  background-color:white;
+  border:1px solid #DDD6D1;
+  border-radius:3px;
+  margin-left:10px;
+}
+
+#Total{
+	float:right;
+	margin-right:240px;
+	margin-top:0px;
+	font-weight:bold;
+	color:#212121;
+	font-size:16px;
+}
