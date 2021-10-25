@@ -29,18 +29,18 @@ p{
 }
 
 hr.solid {
-  border: 0.5px solid #919191;
+  border:0.5px solid #919191;
   margin-top:20px;
   margin-left:320px;
   margin-right:320px;
 }
 
-#size{
+#size {
 	font-style:italic;
 	font-weight:300;
 }
 
-.boxed{
+.boxed {
   margin-top:80px;
   font-size:16px;
   color:AB7045;
@@ -49,13 +49,13 @@ hr.solid {
 }
 
 
-h3{
+h3 {
 	font-size:18px;
 	font-weight:600;
 	margin-bottom:-16px
 }
 
-.Price{
+.Price {
   font-size:20px;
   font-family:"Sofia", sans-serif;
   font-weight:bold;
@@ -78,7 +78,7 @@ h3{
   box-shadow: 0 0 20px 1px #DDD6D1;
 }
 
-#DetailImage{
+#DetailImage {
     margin-top:50px;
 	width:90%;
 }
@@ -87,7 +87,7 @@ h3{
   float:left;
   width: 40%;
 }
-.column2{
+.column2 {
   float:left;
   width: 60%;
 }
@@ -108,20 +108,20 @@ h3{
 }
 
 
-#Back{
+#Back {
 	width:6.5%;
 	float:left;
 }
 
 
-#CartDetail{
+#CartDetail {
 	width:24%;
 	margin-top:16px;
 	margin-left:320px;
 	border-radius:8px;
 }
 
-.NumberSelector1{
+.NumberSelector1 {
   font-weight:bold;
   color:#923D00;	
   background-color:white;
@@ -130,7 +130,7 @@ h3{
   margin-right:10px;
 }
 
-.NumberSelector2{
+.NumberSelector2 {
   font-weight:bold;
   color:#923D00;	
   background-color:white;
@@ -139,7 +139,7 @@ h3{
   margin-left:10px;
 }
 
-#Total{
+#Total {
 	float:right;
 	margin-right:240px;
 	margin-top:0px;
