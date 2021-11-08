@@ -1,14 +1,15 @@
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Cream Cheese Cinnamon Roll</title>
     <link rel="stylesheet" href="Cart.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  </head> 
+  </head>
   
   <body> 
       
   <div class="icon-bar">
-    <a href="javascript:history.back()">
+    <a href="Menu.html">
     <img id='Back' src='Back.png' onmouseover="this.src='BackMouseOn.png'" onmouseout="this.src='Back.png'" alt=Back>
     </a>
   </div>
@@ -16,7 +17,7 @@
   <h1>Shopping Cart</h1>
   
   
-  <div class="row">
+  <div class="row" id="row1">
     <div class="column1">
     <img id='CartDetail' src="DetailBig.png">
     </div>
@@ -24,12 +25,12 @@
     <div class="column2">
     <h3>Cream Cheese Cinnamon Roll<span id="size"> (Big)</span></h3>
     <p>$3.26/piece</p>
-    <p><button class="NumberSelector1">-</button> 2 <button class="NumberSelector2">+</button></p>
+    <p><button class="NumberSelector1" id="btn1">-</button> <span id="s1">"bi"</span> <button class="NumberSelector2" id="btn2">+</button></p>
     </div>  
     </div>
     
     
-  <div class="row">
+  <div class="row" id="row2">
     <div class="column1">
     <img id='CartDetail' src="Detail.png">
     </div>
@@ -37,15 +38,14 @@
     <div class="column2">
     <h3>Cream Cheese Cinnamon Roll<span id="size"> (Small)</span></h3>
     <p>$2.26/piece</p>
-    <p><button class="NumberSelector1">-</button> 2 <button class="NumberSelector2">+</button></p>
+    <p><button class="NumberSelector1" id="btn3">-</button> <span id="s2">"sm"</span> <button class="NumberSelector2" id="btn4">+</button></p>
     </div>  
     </div>
     
     <hr class="solid">
-    <p id='Total'>Total: $11.04</p>
-  
-  
-    <script src="Main.js"></script>
-  <body> 
-  
+    <p id='Total'>Total: "total"USD</p>
+
+  <script src="CartScript.js"></script>
+
+  <body>
   
