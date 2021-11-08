@@ -6,7 +6,7 @@ var flag
 
 selectors[0].onclick = function () {
     flag = "big"
-    DetailImage.src="Detailbig.png"
+    DetailImage.src="DetailBig.png"
     for (var j=0;j<selectors.length;j++){
         selectors[j].style.borderColor=''
         selectors[j].style.color=''
