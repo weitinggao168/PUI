@@ -8,15 +8,19 @@
   
   <body> 
   <div class="icon-bar">
-    <a href="index.html">
-    <img id='Back'src="Back.png" onmouseover="this.src='BackMouseOn.png'" onmouseout="this.src='Back.png'" alt=Back"></a> 
-    <img id='Cart' src='Cart.png' alt=Cart">
-    <img id='Me'src='Me.png' alt=Profile">    
+    <a href="Homepage.html">
+    <img id='Back'src="Back.png" onmouseover="this.src='BackMouseOn.png'" onmouseout="this.src='Back.png'" alt=Back">
+    </a> 
+     
+    <a id='Cart' href="Cart.html">
+      <ion-icon name="bag-handle"></ion-icon>Cart <span id="span1">0</span>
+    </a>
+    
+    <a id='Me' href="Me.html"><ion-icon name="person"></ion-icon>Me</a>   
   </div>
-   
+  
     <h1>Menu</h1>
-   
-<! --- Grid layout --->                                 
+    
     <div class="row">   
     <div class="column">
     <div class="content">
@@ -30,56 +34,53 @@
   
     <div class="column">
     <div class="content">
-      <a href="Detail2.html">
       <img class="Item" src="Image2.png" alt="Chocholate Cinnamon Roll" style="width:100%">
-      </a>
-      <a href="Detail2.html">Chocolate Cinnamon Roll</a>
+      <a>Chocolate Cinnamon Roll</a>
       <p>$3.78</p>
     </div>
     </div>
     
     <div class="column">
     <div class="content">
-      <a href="Detail3.html">
       <img class="Item" src="Image3.png" alt="Pecan Cinnamon Roll" style="width:100%">
-      </a>
-      <a href="Detail3.html">Pecan Cinnamon Roll</a>
+      <a>Pecan Cinnamon Roll</a>
       <p>$4.26</p>
     </div>
     </div>
 
     <div class="column">
     <div class="content">
-      <a href="Detail4.html">
       <img class="Item" src="Image4.png" alt="Original Cinnamon Roll" style="width:100%">
-      </a>
-      <a href="Detail4.html">Original Cinnamon Roll</a>
+      <a>Original Cinnamon Roll</a>
       <p>$2.99</p>
     </div>
     </div>
     
     <div class="column">
     <div class="content">
-      <a href="Detail5.html">
       <img class="Item" src="Image5.png" alt="Gluten Free Cinnamon Roll" style="width:100%">
-      </a>
-      <a href="Detail5.html">Gluten Free Cinnamon Roll</a>
+      <a>Gluten Free Cinnamon Roll</a>
       <p>$3.26</p>
     </div>
     </div>
     
     <div class="column">
     <div class="content">
-      <a href="Detail6.html">
       <img class="Item" src="Image6.png" alt="Brown Butter Roll" style="width:100%">
-      </a>
-      <a href="Detail6.html">Brown Butter Roll</a>
+      <a>Brown Butter Roll</a>
       <p>$3.48</p>
     </div>
     </div>
     </div>
 
-
-     
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="Main.js"></script>
+  <script>
+    span=document.getElementById("span1")
+    bigs=parseInt(localStorage.getItem("Bigs"))
+    smalls=parseInt(localStorage.getItem("Smalls"))
+    span.innerText=bigs+smalls;
+  </script>
   </body>
 </html>

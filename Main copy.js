@@ -18,12 +18,21 @@ let products = [
   ];
 
 
-
 for (let i=0; i<selectors.length; i++){
   selectors[i].addEventListener('click', () => {
-    selectPrice(products[i]);
+    selectPrice();
   })
 }
+
+function selectPrice(){
+  
+}
+
+carts.forEach(add => {
+  add.addEventListener('click', () => {
+  cartNumbers();
+  });
+});
 
 function loadCartNumbers(){
   let productNumbers = localStorage.getItem('cartNumbers');
@@ -33,37 +42,12 @@ function loadCartNumbers(){
   }
 }
 
-function selectPrice(){
+
+function cartNumbers() {
   let productNumbers = localStorage.getItem('cartNumbers');
   productNumbers = parseInt(productNumbers);
   
-  carts.forEach(add => {
-    add.addEventListener('click', () => {
-     
-    if(productNumbers) {
-    localStorage.setItem('cartNumbers', productNumbers + 1);
-    document.querySelector('#cart span').textContent = productNumbers + 1;
-  } else {
-    localStorage.setItem('cartNumbers', 1);
-    document.querySelector('#cart span').textContent = 1;
-    }
   
-    });
-  });
-}
-
-
-
-
-
-/*carts.forEach(add => {
-  add.addEventListener('click', () => {
-  cartNumbers();
-  });
-});
-
-function cartNumbers() {
- 
   if(productNumbers) {
     localStorage.setItem('cartNumbers', productNumbers + 1);
     document.querySelector('#cart span').textContent = productNumbers + 1;
@@ -71,6 +55,6 @@ function cartNumbers() {
     localStorage.setItem('cartNumbers', 1);
     document.querySelector('#cart span').textContent = 1;
   }
-}*/
+}
 
 loadCartNumbers();

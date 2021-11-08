@@ -28,20 +28,40 @@ selectors[1].onclick = function () {
     this.style.fontWeight='bold'
 }
 
-var bigs = sessionStorage.getItem('Bigs');
-sessionStorage.setItem('Bigs', 0)
-var smalls = sessionStorage.getItem('Smalls');
-sessionStorage.setItem('Smalls', 0)
+var bigs = localStorage.getItem('Bigs');
+var smalls = localStorage.getItem('Smalls');
+
+bigs=parseInt(bigs)
+smalls=parseInt(smalls)
+
+if(bigs||smalls) {
+    span.innerHTML=bigs+smalls
+}
 
 carts[0].onclick = function () {
     if (flag == "big") {
-        var bs = parseInt(sessionStorage.getItem('Bigs'))
-        sessionStorage.setItem('Bigs', bs + 1);
+        if(bigs) {
+            localStorage.setItem('Bigs', bigs + 1)
+            bigs = parseInt(localStorage.getItem('Bigs'));
+            span.innerHTML=bigs+smalls
+        }
+        else {
+            localStorage.setItem('Bigs', 1);
+            bigs = parseInt(localStorage.getItem('Bigs'));
+            span.innerHTML=bigs+smalls
+        }
     }
 
     if (flag == "small") {
-        var ss = parseInt(sessionStorage.getItem('Smalls'))
-        sessionStorage.setItem('Smalls', ss + 1);
+        if(smalls) {
+            localStorage.setItem('Smalls', smalls + 1);
+            smalls = parseInt(localStorage.getItem('Smalls'));
+            span.innerHTML=bigs+smalls
+        }
+        else {
+            localStorage.setItem('Smalls', 1);
+            smalls = parseInt(localStorage.getItem('Smalls'));
+            span.innerHTML=bigs+smalls
+        }
     }
-    span.innerHTML=parseInt(sessionStorage.getItem('Bigs'))+parseInt(sessionStorage.getItem('Smalls'))
 }
