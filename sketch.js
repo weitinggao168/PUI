@@ -57,7 +57,7 @@ function resetTree() {
     textSize(40);
     fill(0, 240, 255);
     textFont('Rokkitt');
-    text("Please input your voice", 700, 600);
+    text("Please input your voice", 600, 600);
 }
 
 
