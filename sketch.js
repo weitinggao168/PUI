@@ -9,9 +9,9 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(1920, 1200);
+    createCanvas(windowWidth, windowHeight);
     imageMode(CORNER);
-    image(img, 0, 0, 1920, 1200);
+    image(img, 0, 0, windowWidth, windowHeight);
     var a = createVector(1000, 1050);
     var b = createVector(1000, height - 355);
     var root = new Branch(a, b);
@@ -47,7 +47,7 @@ function treeGrow() {
 
 function resetTree() {
 
-    image(img, 0, 0, 1920, 1200);
+    image(img, 0, 0, windowWidth, windowHeight);
     tree = [];
     var a = createVector(1000, 1050);
     var b = createVector(1000, height - 355);
@@ -63,7 +63,7 @@ function resetTree() {
 
 
 function draw() {
-    image(img, 0, 0, 1920, 1200);
+    image(img, 0, 0, windowWidth, windowHeight);
     //background(0);
     for (var i = 0; i < tree.length; i++) {
         tree[i].show();
