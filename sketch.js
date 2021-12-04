@@ -57,7 +57,7 @@ function resetTree() {
     textSize(40);
     fill(0, 240, 255);
     textFont('Rokkitt');
-    text("Please input your voice", 500, 600);
+    text("Please input your voice", 500, 500);
 }
 
 
@@ -97,7 +97,7 @@ function draw() {
         goodFlag = 1;
         textSize(40);
         fill(0, 240, 255);
-        text("Terrific!", 1080, 910);
+        text("Terrific!", 700, 800);
     } else {
 
 
